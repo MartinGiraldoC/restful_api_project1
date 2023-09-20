@@ -35,7 +35,7 @@ const createArticle = async(req,res)=>{
     try{
 
         const {body} = req;
-        const createArticle = await Articleservice.createArticle(body.tittle,body.content,body.UserId);
+        const createArticle = await Articleservice.createArticle(body.title,body.content,body.UserId);
         res.status(200).send({status:"ok",data:createArticle})
 
     }catch(error){

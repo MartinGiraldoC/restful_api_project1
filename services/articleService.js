@@ -32,11 +32,11 @@ const getArticle = async (id)=> {
 };
 
 
-const createArticle = async (tittle,content,UserId)=> {
+const createArticle = async (title,content,UserId)=> {
     try{
 
         let NewArticle = await db.Article.create({
-            tittle,
+            title,
             content,
             UserId
         });
@@ -52,7 +52,7 @@ const updateArticle = async (id,title,content,idUser) =>{
     try{
 
         let updateArticle =  await db.Article.update({
-            tittle,
+            title,
             content,
             idUser
         },{
