@@ -34,7 +34,7 @@ const createUser = async (req, res)=>{
 const updateUser = async(req,res)=>{
     const id = req.params.userId
     let {name,email,phone,password} = req.body;
-    const updateUser = userService.updateUser(id,name,email,phone,password)
+    const updateUser = await userService.updateUser(id,name,email,phone,password)
     if(updateUser)
         res.status(200).send({status:'OK',data: updateUser})
     else
