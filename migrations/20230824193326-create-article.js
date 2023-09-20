@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      title: { //Atributo title
+      tittle: { //Atributo title
         type: Sequelize.STRING
       },
       content: { //Atributo content
